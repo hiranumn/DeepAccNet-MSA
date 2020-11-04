@@ -66,7 +66,7 @@ Perhaps ```lddt``` is the easiest place to start as it is per-residue quality sc
 
 # Required softwares
 - Python3.5>
-- Pyrosetta 
+- Pyrosetta, trRosetta
 - Tensorflow 1.14 (not Tensorflow 2.0)
 
 # Updates

@@ -12,7 +12,7 @@ usage: ErrorPredictorMSA.py [-h] [--pdb] [--leavetemp] [--verbose] [--process PR
 Error predictor network with predicted distogram
 
 positional arguments:
-  distogram             predicted distogram (npz format, key for distogram should be 'dist')
+  distogram             predicted distogram from trRosetta (npz format, key for distogram should be 'dist')
   infolder              input folder name full of decoy pdbs having same sequence or path to a single pdb
   outfolder             output folder name. If a pdb path is passed this needs to be a .npz file. Can also be empty.
                         Default is current folder or pdbname.npz

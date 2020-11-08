@@ -32,17 +32,10 @@ optional arguments:
 v0.0.1
 ```
 
-# Example usages (for IPD people)
-Type the following commands to activate tensorflow environment with pyrosetta3.
-```
-source activate tensorflow
-source /software/pyrosetta3/setup.sh
-```
-
-Running on a folder of pdbs (foldername: ```samples```)
-```
-python ErrorPredictor.py -r -v samples outputs
-```
+# Required softwares
+- Python3.5>
+- Pyrosetta, trRosetta
+- Tensorflow 1.14 (not Tensorflow 2.0)
 
 # How to look at outputs
 Output of the network is written to ```[input_file_name].npz.```
@@ -64,14 +57,5 @@ Perhaps ```lddt``` is the easiest place to start as it is per-residue quality sc
 - If you get an import error for pyErrorPred, you probably moved the script out of LocalAccuacyPredictor. In that case, you would have to add pyErrorPred to python path or do so within the script. 
 - Send an e-mail at hiranumn at cs dot washington dot edu.
 
-# Required softwares
-- Python3.5>
-- Pyrosetta, trRosetta
-- Tensorflow 1.14 (not Tensorflow 2.0)
-
 # Updates
-- Added reference state mode, 2019.12.4
-- Reorganized code so that it is a python package, 2019.11.10
-- Added some analysis code, 2019.11.6
-- Distance matrix calculation speed-up, 2019.10.25
-- v 0.0.1 released, 2019.10.19
+- Repo initialized 2020.11.3. (Planning to merge with DeepAccNet soon).

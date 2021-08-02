@@ -45,7 +45,7 @@ def main():
     parser.add_argument("--gpu",
                         "-g", action="store",
                         default=None,
-                        help="specific gpu id to use")
+                        help="specific gpu id to use, e.g. 0 for gpu0 (Default: None)")
     parser.add_argument("--featurize",
                         "-f",
                         action="store_true",
@@ -124,7 +124,7 @@ def main():
     # Importing larger libraries #
     ##############################
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-    if args.gpu:
+    if args.gpu is not None:
         os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
     script_dir = os.path.dirname(__file__)
     sys.path.insert(0, script_dir)
